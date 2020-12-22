@@ -31,7 +31,7 @@
           <label class="form-label">Product</label>
         </div>
         <div class="form-outline mb-4">
-          <input required type="number" name="amount" class="form-control" />
+          <input required type="number" min="0" name="amount" class="form-control" />
           <label class="form-label">Amount</label>
         </div>
         <div class="form-check form-switch mb-4">
@@ -40,7 +40,7 @@
         </div>
         <div class="form__row mb-4 d-grid col-2 mx-auto">
           <label class="form__label">Category</label>
-          <select name="category" class="form__input form__input--type">
+          <select name="category_id" class="form__input form__input--type">
             <option value="1">Fruits</option>
             <option value="2">Vegetables</option>
             <option value="3">Dairy</option>

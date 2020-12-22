@@ -40,7 +40,7 @@ const addProduct = function (e) {
 const groupedProductsByCategory = function (products, categories) {
   // need to group products by categories to reduce n*n
   const groupProducts = products.reduce((groupedValues, product) => {
-    const value = product['category'];
+    const value = product['category_id'];
     groupedValues[value] = (groupedValues[value] || []).concat(product);
 
     return groupedValues;

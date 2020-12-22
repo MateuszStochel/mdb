@@ -1,5 +1,5 @@
 export const getAll = function () {
-  return JSON.parse(localStorage.getItem('products'));
+  return JSON.parse(localStorage.getItem('products')) || [];
 };
 
 export const add = function (formObj) {
